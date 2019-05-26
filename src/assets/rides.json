@@ -1,0 +1,38 @@
+{
+    "posts": [
+      {
+        "username": "dqewqw",
+        "password": "qeqweqw",
+        "id": 1
+      },
+      {
+        "username": "id2",
+        "password": "asdasasdas",
+        "id": 2
+      },
+      {
+        "username": "admin",
+        "password": "admin",
+        "id": 4
+      },
+      {
+        "username": "asasd",
+        "password": "asas",
+        "id": 5
+      },
+      {
+        "username": "asa",
+        "password": "asasa",
+        "id": 6
+      },
+      {
+        "username": "asas",
+        "password": "ASASAS",
+        "id": 7
+      }
+    ],
+    "comments": [],
+    "profile": {
+      "name": "typicode"
+    }
+  }

@@ -1,0 +1,53 @@
+<!-- <form>
+  <div *ngIf="!onSubmit">
+    <label>Username</label>&nbsp;
+    <input type="text"  #username><br/><br/>
+    <label>Password</label> &nbsp;
+    <input type="password" #password><br/><br/>
+    <button (click)="onClick(username.value, password.value)">Submit</button>
+  </div>
+</form>
+
+<form>
+  <div *ngIf="onSubmit">
+    <div *ngIf="isAuthenticated; else failuremsg">
+      Hello {{userName}}, Welcome
+    </div>
+    <ng-template #failuremsg>
+      You are not entitled to login
+    </ng-template>
+    <button (click)="onSubmit=false">Go back</button>
+  </div>
+</form> -->
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-3">
+      <button (click)="filterargs = ride">Show All</button>
+    </div>
+    <div class="col-md-3">
+      <button (click)="filterargs = 'd'">Filter First Name </button> </div>
+    <div class="col-md-3">
+      <button (click)="filterargs ='h'">Filter Last Name</button> </div>
+  </div>
+</div>
+
+<table class="table table-hover">
+  <thead>
+    <tr>
+      <th>Firstname</th>
+      <th>Lastname</th>
+      <th>Email</th>
+    </tr>
+  </thead>
+  <tbody>
+
+    <tr *ngFor="let ride of rides | filterpipe:filterargs" (click)="highLight(ride); plate = ride">
+      <td>{{ride.firstName }}</td>
+      <td>{{ride.lastName }}</td>
+      <td>{{ride.eMail}}</td>
+    </tr>
+  </tbody>
+</table>
+
+<app-ridedetails [greetMessage]="plate" *ngIf="targo"></app-ridedetails>

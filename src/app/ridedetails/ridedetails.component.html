@@ -1,0 +1,20 @@
+<div>
+<table class="table" >
+    <thead>
+      <tr>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Email</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>   
+        <td>{{render.firstName}}</td>
+        <td>{{render.lastName }}</td>
+        <td>{{render.eMail}}</td>
+      </tr>
+    </tbody>
+    {{myMessage}}
+    <button class="btn" (click)="muteStream()"  type="button" [ngClass]="status ? 'btn-success' : 'btn-danger'"> {{ status === true ? 'Case 1' : 'Case 2' }} </button>
+</table>
+</div>

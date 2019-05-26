@@ -1,0 +1,33 @@
+{
+  "posts": [
+    {
+      "username": "user1",
+      "password": "user1",
+      "id": 10
+    },
+    {
+      "username": "user2",
+      "password": "user2",
+      "id": 11
+    },
+    {
+      "username": "user3",
+      "password": "user3",
+      "id": 12
+    },
+    {
+      "username": "user4",
+      "password": "user4",
+      "id": 13
+    },
+    {
+      "username": "user5",
+      "password": "user5",
+      "id": 14
+    }
+  ],
+  "comments": [],
+  "profile": {
+    "name": "typicode"
+  }
+}
